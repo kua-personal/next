@@ -12,7 +12,7 @@ export default function Searchbar() {
     const q = searchParams.get("q");
 
     useEffect(() => {
-        setSearch(q || "");
+        setSearch(q ?? "");
     }, [q]);
 
     const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
